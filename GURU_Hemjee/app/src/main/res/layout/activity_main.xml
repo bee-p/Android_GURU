@@ -50,15 +50,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <include
+            layout="@layout/fragment_home"
+            android:id="@+id/fragment_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleButton"
+            />
 
-    <include
-        layout="@layout/fragment_home"
-        android:id="@+id/fragment_main"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="61dp"
-        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
